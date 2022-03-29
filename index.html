@@ -107,7 +107,7 @@
             <h1 class="text-uppercase text-center">want an offer?</h1>
         </div>
 
-    <form class="row g-2 p-3 mx-5">
+    <form class="row g-2 p-3 mx-5" id="myForm" onsubmit="calcolaPrezzo(event)">
         <div class="col-6">
             <label for="FirstName" class="form-label">First name</label>
             <input type="text" class="form-control" id="FirstName">
@@ -128,9 +128,9 @@
             <label for="typeOfWork" class="form-label">type of work</label>
             <select id="typeOfWork" class="form-select">
                 <option selected>Choose a Work</option>
-                <option>Backend Development</option>
-                <option>Frontend Development</option>
-                <option>Project Analisys</option>
+                <option value="1">Backend Development</option>
+                <option value="2">Frontend Development</option>
+                <option value="3">Project Analisys</option>
             </select>
         </div>
         <div class="col-6">
@@ -142,8 +142,11 @@
             <textarea class="form-control" id="messageTextArea" rows="3"></textarea>
         </div>
         <div class="col-12 text-center pt-3">
-            <button type="submit" class="btn btn-warning">Send</button>
+            <button type="submit" class="btn btn-warning" id="sendDate">Send</button>
         </div>
+        <p class="text-left">
+			<span id="prezzoTotale" class="h2"></span>
+		</p>
     </form>
     </div>
 </main>
