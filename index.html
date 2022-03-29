@@ -32,8 +32,8 @@
     </header>
 
     <!--Il nostro portfolio-->
-    <main>
-    <div class="container mt-3">
+<main>
+    <div class="container mt-3 mb-3">
         <h1 class="text-center text-uppercase mx-5">portfolio</h1>
         <div class="row my-3">
             <div class="col-4 text-center">
@@ -102,12 +102,69 @@
     </div>
 
     <!--Il nostro Form-->
-    <div class="container bg-info">
-        <div class="row">
-
+    <div class="container-fluid bg-info pt-3 mt-3 pb-4">
+        <div class="col-12">
+            <h1 class="text-uppercase text-center">want an offer?</h1>
         </div>
+
+    <form class="row g-2 p-3 mx-5">
+        <div class="col-6">
+            <label for="FirstName" class="form-label">First name</label>
+            <input type="text" class="form-control" id="FirstName">
+        </div>
+        <div class="col-6">
+            <label for="LastName" class="form-label">Last name</label>
+            <input type="text" class="form-control" id="LastName">
+        </div>
+        <div class="col-6">
+            <label for="Email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="Email">
+        </div>
+        <div class="col-6">
+            <label for="hoursRequested" class="form-label">Hours requested</label>
+            <input type="text" class="form-control" id="hoursRequested">
+        </div>
+        <div class="col-6">
+            <label for="typeOfWork" class="form-label">type of work</label>
+            <select id="typeOfWork" class="form-select">
+                <option selected>Choose a Work</option>
+                <option>Backend Development</option>
+                <option>Frontend Development</option>
+                <option>Project Analisys</option>
+            </select>
+        </div>
+        <div class="col-6">
+            <label for="discountCode" class="form-label">Discount Code</label>
+            <input type="text" class="form-control" id="discountCode">
+        </div>
+        <div class="form-group">
+            <label for="messageTextArea">Message</label>
+            <textarea class="form-control" id="messageTextArea" rows="3"></textarea>
+        </div>
+        <div class="col-12 text-center pt-3">
+            <button type="submit" class="btn btn-warning">Send</button>
+        </div>
+    </form>
     </div>
-    </main>
+</main>
+
+    <!--Fine con il footer-->
+    <footer class="bg-dark">
+        <div class="container-fluid text-center pt-5">
+            <div class="row text-secondary">
+                <div class="col-12 my-3">
+                    <h2 class="text-uppercase">location</h2>
+                </div>
+                <div class="col-12">
+                    <p>2215 John Daniel Drive<br>
+                        Clark, MO 65243</p>
+                </div>
+                <div class="col-12 my-1">
+                    <p>Copyright &copy; Your Website 2021</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
 
