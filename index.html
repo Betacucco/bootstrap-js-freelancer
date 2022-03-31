@@ -13,15 +13,17 @@
 
   <body>
     <!--Navbar-->
-    <nav class="navbar navbar-light bg-dark">
-        <span class="navbar-brand mx-5 text-primary">Portfolio</span>
-        <span class="navbar-brand px-5 text-primary"> <u>CONTACT ME</u> </span>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <span class="navbar-brand mx-5 text-primary">Portfolio</span>
+            <span class="navbar-brand px-5 text-primary"> <u>CONTACT ME</u> </span>
+        </div>
     </nav>
 
     <!--Intestazione con immagine-->
     <header>
     <div class="container-fluid bg-info">
-        <div class="row">
+        <div class="row align-items-center justify-content-center">
             <div class="col-12 text-center gy-3">
                 <img src="portfolio\undraw_profile_pic_ic5t.svg" class="img-fluid" alt="Immagine profilo">
                 <h1 class="mt-3">Pinco Pallo</h1>
@@ -108,36 +110,36 @@
     <form class="row g-2 p-3 mx-5" id="myForm" onsubmit="calcolaPrezzo(event)">
         <div class="col-md-6 col-12-xs">
             <label for="FirstName" class="form-label">First name</label>
-            <input type="text" class="form-control" id="FirstName" placeholder="Nome">
+            <input type="text" class="form-control" id="FirstName" placeholder="Nome"/>
         </div>
-        <div class="col-md-6 col-12-xs">
+        <div class="col-sm-6 col-12">
             <label for="LastName" class="form-label">Last name</label>
-            <input type="text" class="form-control" id="LastName" placeholder="Cognome">
+            <input type="text" class="form-control" id="LastName" placeholder="Cognome"/>
         </div>
-        <div class="col-md-6 col-12-xs">
+        <div class="col-sm-6 col-12">
             <label for="Email" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="Email" placeholder="Inserisci email">
+            <input type="email" class="form-control" id="Email" placeholder="Inserisci email"/>
         </div>
-        <div class="col-md-6 col-12-xs">
+        <div class="col-sm-6 col-12">
             <label for="hoursRequested" class="form-label">Hours requested</label>
-            <input type="text" class="form-control" id="hoursRequested" placeholder="Ore richieste">
+            <input type="text" class="form-control" id="hoursRequested" placeholder="Ore richieste"/>
         </div>
-        <div class="col-md-6 col-12-xs">
+        <div class="col-sm-6 col-12">
             <label for="typeOfWork" class="form-label">type of work</label>
             <select id="typeOfWork" class="form-select">
-                <option selected disabled>Choose a Work</option>
+                <option selected>Choose a Work</option>
                 <option value="1">Backend Development</option>
                 <option value="2">Frontend Development</option>
                 <option value="3">Project Analisys</option>
             </select>
         </div>
-        <div class="col-md-6 col-12-xs">
-            <label for="discountCode" class="form-label">Discount Code</label>
-            <input type="text" class="form-control" id="discountCode" placeholder="Codice Sconto">
+        <div class="col-sm-6 col-12">
+            <label for="phone" class="form-label">Discount Code</label>
+            <input type="text" class="form-control" id="discountCode" placeholder="Codice Sconto"/>
         </div>
         <div class="form-group">
             <label for="messageTextArea">Message</label>
-            <textarea class="form-control" id="messageTextArea" rows="3" placeholder="Inserire un messaggio"></textarea>
+            <textarea class="form-control" id="messageTextArea" rows="5" placeholder="Inserire un messaggio"></textarea>
         </div>
         <div class="col-12  text-center pt-3">
             <button type="submit" class="btn btn-warning" id="sendDate">Send</button>
